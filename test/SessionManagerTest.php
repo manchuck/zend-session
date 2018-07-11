@@ -394,13 +394,10 @@ class SessionManagerTest extends TestCase
 
     /**
      * @runInSeparateProcess
+     * @requires extension xdebug
      */
     public function testSendingFalseToSendExpireCookieWhenCallingDestroyShouldNotSendCookie()
     {
-        if (! extension_loaded('xdebug')) {
-            $this->markTestSkipped('Xdebug required for this test');
-        }
-
         $this->manager = new SessionManager();
         $config = $this->manager->getConfig();
         $config->setUseCookies(true);
@@ -536,13 +533,10 @@ class SessionManagerTest extends TestCase
 
     /**
      * @runInSeparateProcess
+     * @requires extension xdebug
      */
     public function testRegeneratingIdAfterSessionStartedShouldSendExpireCookie()
     {
-        if (! extension_loaded('xdebug')) {
-            $this->markTestSkipped('Xdebug required for this test');
-        }
-
         $this->manager = new SessionManager();
         $config = $this->manager->getConfig();
         $config->setUseCookies(true);
@@ -565,13 +559,10 @@ class SessionManagerTest extends TestCase
 
     /**
      * @runInSeparateProcess
+     * @requires extension xdebug
      */
     public function testRememberMeShouldSendNewSessionCookieWithUpdatedTimestamp()
     {
-        if (! extension_loaded('xdebug')) {
-            $this->markTestSkipped('Xdebug required for this test');
-        }
-
         $this->manager = new SessionManager();
         $config = $this->manager->getConfig();
         $config->setUseCookies(true);
@@ -606,13 +597,10 @@ class SessionManagerTest extends TestCase
 
     /**
      * @runInSeparateProcess
+     * @requires extension xdebug
      */
     public function testRememberMeShouldSetTimestampBasedOnConfigurationByDefault()
     {
-        if (! extension_loaded('xdebug')) {
-            $this->markTestSkipped('Xdebug required for this test');
-        }
-
         $this->manager = new SessionManager();
         $config = $this->manager->getConfig();
         $config->setUseCookies(true);
@@ -647,13 +635,10 @@ class SessionManagerTest extends TestCase
 
     /**
      * @runInSeparateProcess
+     * @requires extension xdebug
      */
     public function testForgetMeShouldSendCookieWithZeroTimestamp()
     {
-        if (! extension_loaded('xdebug')) {
-            $this->markTestSkipped('Xdebug required for this test');
-        }
-
         $this->manager = new SessionManager();
         $config = $this->manager->getConfig();
         $config->setUseCookies(true);

@@ -535,7 +535,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSetEntropyFileError()
     {
@@ -544,7 +544,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testGetEntropyFileError()
     {
@@ -598,7 +598,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testGetEntropyLengthError()
     {
@@ -607,7 +607,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSetEntropyLengthError()
     {
@@ -759,7 +759,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testGetHashFunctionError()
     {
@@ -768,7 +768,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSetHashFunctionError()
     {
@@ -825,7 +825,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testGetHashBitsPerCharacterError()
     {
@@ -834,7 +834,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSetHashBitsPerCharacterError()
     {
@@ -845,7 +845,7 @@ class SessionConfigTest extends TestCase
     // session.sid_length
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSidLengthDefaultsToIniSettings()
     {
@@ -853,7 +853,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSidLengthIsMutable()
     {
@@ -862,7 +862,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSidLengthAltersIniSetting()
     {
@@ -871,7 +871,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSettingInvalidSidLengthRaisesException()
     {
@@ -881,7 +881,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSettingOutOfRangeSidLengthRaisesException()
     {
@@ -902,7 +902,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSidBitsPerCharacterDefaultsToIniSettings()
     {
@@ -910,7 +910,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      * @dataProvider sidSidPerCharacters
      */
     public function testSidBitsPerCharacterIsMutable($sidBitsPerCharacter)
@@ -920,7 +920,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      * @dataProvider sidSidPerCharacters
      */
     public function testSidBitsPerCharacterAltersIniSetting($sidBitsPerCharacter)
@@ -930,7 +930,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSettingInvalidSidBitsPerCharacterRaisesException()
     {
@@ -940,7 +940,7 @@ class SessionConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSettingOutOfBoundSidBitsPerCharacterRaisesException()
     {

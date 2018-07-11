@@ -301,7 +301,7 @@ class StandardConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSetEntropyFileError()
     {
@@ -310,7 +310,7 @@ class StandardConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testGetEntropyFileError()
     {
@@ -363,7 +363,7 @@ class StandardConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testGetEntropyLengthError()
     {
@@ -372,7 +372,7 @@ class StandardConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSetEntropyLengthError()
     {
@@ -457,7 +457,7 @@ class StandardConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testGetHashFunctionError()
     {
@@ -466,7 +466,7 @@ class StandardConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSetHashFunctionError()
     {
@@ -510,7 +510,7 @@ class StandardConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testGetHashBitsPerCharacterError()
     {
@@ -519,7 +519,7 @@ class StandardConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSetHashBitsPerCharacterError()
     {
@@ -530,7 +530,7 @@ class StandardConfigTest extends TestCase
     // session.sid_length
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSidLengthIsMutable()
     {
@@ -539,7 +539,7 @@ class StandardConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSettingInvalidSidLengthRaisesException()
     {
@@ -549,7 +549,7 @@ class StandardConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSettingOutOfRangeSidLengthRaisesException()
     {
@@ -570,7 +570,7 @@ class StandardConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      * @dataProvider sidBitsPerCharacters
      */
     public function testSidBitsPerCharacterIsMutable($sidBitsPerCharacter)
@@ -580,7 +580,7 @@ class StandardConfigTest extends TestCase
     }
 
     /**
-     * @requires PHP 7.1
+     * @group PHP71
      */
     public function testSettingInvalidSidBitsPerCharacterRaisesException()
     {
